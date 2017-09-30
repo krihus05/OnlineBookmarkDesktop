@@ -4,25 +4,42 @@
         <title>Start Page</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
     </head>
-    <body>
-        <section>
+    <body ondragover="drag_over(event)" ondrop="drop(event)">
+        <section >
             <div id="folders">
-                
+
             </div>
             <div id="bookmarks">
-                
+
             </div>
-            
+
+            <article id="settingsWindow" draggable="true" ondragstart="drag_start(event)">
+                <p>Settings!</p>
+            </article>
+            <article id="foldersWindow" draggable="true" ondragstart="drag_start(event)">
+                <p>Folders!</p>
+            </article>  
+            <article id="bookmarksWindow" draggable="true" ondragstart="drag_start(event)">
+                <p>Bookmarks!</p>
+            </article>  
+            <article id="logoutWindow" draggable="true" ondragstart="drag_start(event)">
+                <p>Logout!</p>
+            </article>  
+            <article id="clockWindow" draggable="true" ondragstart="drag_start(event)">
+                <p>Clock!</p>
+            </article>  
+
         </section>
         <footer>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Folders</a></li>
-                <li><a href="#">Bookmarks</a></li>
-                <li class="right"><a href="#">13:37</a></li>
-                <li class="right"><a href="#">Logout</a></li>
+                <li id="home_li"><a id="home"      href="#">Home</a></li>
+                <li id="settings_li"><a id="settings"  href="#">Settings</a></li>
+                <li id="folder_1i"><a id="folder" href="#">Folders</a></li>
+                <li id="bookmark_li"><a id="bookmark" href="#">Bookmarks</a></li>
+                <li id="clock_li" class="right"><a id="clock" href="#">13:37</a></li>
+                <li id="logout_li" class="right"><a id="logout" href="#">Logout</a></li>
             </ul>
             
 
